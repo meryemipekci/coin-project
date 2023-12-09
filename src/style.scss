@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 700px;
+  padding: 0 40px;
+  margin: auto;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  gap: 20px;
+  h2 {
+    font-weight: normal;
+  }
+  img {
+    width: 50px;
+  }
+}
+// button
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 28px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 8px 16px 8px 18px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+// logo
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 40px;
+  div {
+    position: relative;
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 5px;
+      border: none;
+      &:focus {
+        outline: 1px solid #646cff;
+      }
+    }
+    span {
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      color: rgb(217, 5, 5);
+    }
+  }
+  button {
+    color: white;
+    background: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+    &:disabled {
+      background: rgb(77, 76, 76);
+    }
+  }
+}
+//header
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  .h-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+
+    img {
+      width: 3rem;
+    }
+  }
+  .links {
+    display: flex;
+    gap: 1.8rem;
+  }
+
+  .active {
+    text-shadow: 0 0 1rem #646cff;
+  }
+}
+// artieksi degerler için renk degişşimi
+
+.up {
+  color: rgb(38, 160, 38) !important;
+}
+.down {
+  color: red !important;
+}
+.cardd {
+  transition: all 0.3s;
+}
+.cardd:hover {
+  cursor: pointer;
+  transform: translate(10px, -10px);
+  box-shadow: 0 0 30px #e0e8ef8a;
+}
+
+table tr {
+  cursor: pointer;
+}
+#detail {
+  overflow-x: hidden;
+}
